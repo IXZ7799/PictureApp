@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PictureApp.MainPage">
+
+    <StackLayout Spacing="10" Padding="10">
+        <Frame BorderColor="Gray" CornerRadius="5" Padding="8">
+            <StackLayout>
+                <Label Text="Camera" FontSize="Medium" FontAttributes="Bold" />
+                <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill" />
+                <Label Text="How to capture an image and retrieve an image from a gallery."/>
+            </StackLayout>
+        </Frame>
+
+        <Button x:Name="btnPickPhoto" Text="Pick Photo" Clicked="BtnPickPhoto_Clicked"/>
+        <Button x:Name="btnTakePhoto" Text="Take Photo" Clicked="BtnTakePhoto_Clicked"/>
+
+        <Label Text="Image will show here" TextColor="Blue" FontAttributes="Bold"/>
+        <Label Text="File:" TextColor="DarkRed" x:Name="lblFilename"></Label>
+        <Image x:Name="imgShowImage"/>
+        <Label Text=""/>
+    </StackLayout>
+
+</ContentPage>
